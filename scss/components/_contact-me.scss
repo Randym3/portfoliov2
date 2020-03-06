@@ -1,0 +1,63 @@
+section.contact-me {
+	background-color: $primary-bg-color;
+	ul.nav-socials {
+		justify-content: center;
+		margin: 10px 0;
+		li {
+			list-style: none;
+			a {
+				color: $font-dark-color;
+				font-size: 25px;
+				margin: 0 10px;
+				transition: all ease-in-out 200ms;
+				&:hover {
+					color: $font-light-color;
+				}
+			}
+		}
+	}
+	form {
+		margin: 20px 0;
+		button {
+			background-color: none;
+		}
+		text-align: center;
+		label {
+			font-size: 13px;
+			top: -5px;
+			left: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+		input,
+		textarea {
+			padding: 8px;
+			font-size: 16px;
+			margin: 10px 0;
+		}
+
+		div.form-single {
+			position: relative;
+			margin: 10px 0;
+			input,
+			textarea {
+				width: 100%;
+				background: none;
+				outline: none;
+				border: none;
+				border-bottom: 1.5px solid #333333;
+			}
+			textarea {
+				position: relative;
+				border: 1.5px solid #333333;
+				border-radius: 5px;
+				height: 150px;
+			}
+			div.text-area {
+				label {
+					top: -15px;
+				}
+			}
+		}
+	}
+}

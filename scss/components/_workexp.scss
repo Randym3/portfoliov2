@@ -1,0 +1,19 @@
+section.experience-content {
+	div.smaller-container {
+		.position-title {
+			margin: 20px 0;
+		}
+		p.position-time {
+			margin-bottom: 10px;
+		}
+		ul.position-duties {
+			padding: 0 20px;
+			li {
+				padding: 3px 0;
+				@media (max-width: $l) {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}

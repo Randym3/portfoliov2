@@ -1,0 +1,88 @@
+section.about-me {
+	background-color: $light-gray-bg;
+	.container {
+		.flex-container {
+			justify-content: space-between;
+			@media (max-width: $m) {
+				flex-direction: column-reverse;
+			}
+		}
+	}
+	div.about-text {
+		margin: 20px 0;
+		max-width: 55%;
+		@media (max-width: $m) {
+			max-width: 90%;
+			margin: 20px auto;
+		}
+		@media (max-width: $s) {
+			max-width: 100%;
+		}
+		p {
+			line-height: 26px;
+			font-size: 18px;
+			@media (max-width: $l) {
+				font-size: 16px;
+			}
+		}
+		div.skills-icons {
+			i {
+				@media (max-width: $l) {
+					font-size: 35px;
+				}
+				&:hover {
+					p {
+						animation: fadeInTooltip 400ms;
+						display: block;
+					}
+				}
+				font-size: 40px;
+				position: relative;
+				p {
+					z-index: 1;
+					width: fit-content;
+					pointer-events: auto;
+					display: none;
+					position: absolute;
+					text-align: center;
+					top: 90%;
+					padding: 8px 16px;
+					border-radius: 5px;
+					margin: 0 auto;
+					border-top: 10px transparent solid;
+					border-bottom: 10px transparent solid;
+					color: $font-light-color;
+					font-family: $default-font-family;
+					background-color: $font-dark-color;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	@keyframes fadeInTooltip {
+		from {
+			top: 130%;
+			opacity: 0;
+		}
+		to {
+			top: 90%;
+			opacity: 1;
+		}
+	}
+
+	div.profile-pic-container {
+		margin: 20px 0;
+		text-align: center;
+		position: relative;
+
+		img {
+			position: relative;
+			border-radius: 50%;
+			background-color: $nav-dark-bg;
+			width: 400px;
+			@media (max-width: $l) {
+				width: 300px;
+			}
+		}
+	}
+}

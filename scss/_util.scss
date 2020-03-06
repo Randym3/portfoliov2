@@ -1,0 +1,203 @@
+@import "config";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: relative;
+	font-family: $default-font-family;
+	color: $font-dark-color;
+}
+.light-text {
+	color: $font-light-color;
+}
+.dark-text {
+	color: $font-dark-color;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.text-center {
+	text-align: center;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.jc-center {
+	justify-content: center;
+}
+.jc-space-around {
+	justify-content: space-around;
+}
+.jc-space-evenly {
+	justify-content: space-evenly;
+}
+.jc-space-between {
+	justify-content: space-between;
+}
+.align-items-center {
+	align-items: center;
+}
+section {
+	padding: 40px 0;
+}
+
+//margins
+.mrg-1 {
+	margin: 10px;
+}
+.pdd-1 {
+	padding: 10px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	@media (min-width: $m) {
+		width: 750px;
+	}
+	@media (min-width: $l) {
+		width: 970px;
+	}
+	@media (min-width: $xl) {
+		width: 1170px;
+	}
+}
+div.modal-container {
+	position: relative;
+	background-color: white;
+	border-radius: 0.75rem;
+	padding: 40px 20px;
+	text-align: center;
+	@media (max-width: $s) {
+		max-width: 90%;
+		margin: 1.75rem auto;
+	}
+	@media (min-width: $s) {
+		max-width: 500px;
+		margin: 1.75rem auto;
+	}
+	@media (min-width: $l) {
+		max-width: 800px;
+	}
+	@media (min-width: $xl) {
+		max-width: 1140px;
+	}
+}
+
+div.smaller-container {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+}
+a {
+	text-decoration: none !important;
+}
+button {
+	cursor: pointer;
+}
+
+a.brand {
+	display: block;
+}
+a.brand-primary {
+	font-size: 1.7rem;
+}
+a.brand-secondary {
+	font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6,
+.brand {
+	@include header-font-family;
+}
+
+h1 {
+	font-size: 80px;
+	@media (max-width: $l) {
+		font-size: 70px;
+	}
+
+	@media (max-width: $m) {
+		font-size: 65px;
+	}
+	@media (max-width: $s) {
+		font-size: 60px;
+	}
+}
+
+h2 {
+	font-size: 55px;
+	@media (max-width: $l) {
+		font-size: 45px;
+	}
+	@media (max-width: $m) {
+		font-size: 40px;
+	}
+	@media (max-width: $s) {
+		font-size: 35px;
+	}
+}
+h3 {
+	font-size: 35px;
+	@media (max-width: $m) {
+		font-size: 30px;
+	}
+}
+h4 {
+	font-size: 25px;
+}
+
+.cta-button {
+	display: inline-block;
+	border: 2px solid $nav-dark-bg;
+	border-radius: 5px;
+	color: $font-dark-color;
+	font-weight: bold;
+	padding: 8px 16px;
+	font-size: 16px;
+	transition: all ease-in-out 250ms;
+	&:hover {
+		color: $font-light-color;
+		background-color: $nav-dark-bg;
+	}
+}
+.close-button {
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+.hide-overflow {
+	overflow: hidden;
+}
+
+hr.custom-divider {
+	width: 300px;
+	margin: 20px auto;
+	background-color: $font-dark-color;
+	height: 3px;
+	border: none;
+}
+hr.custom-divider-2 {
+	width: 80%;
+	max-width: 500px;
+	margin: 20px 0;
+	background-color: $font-dark-color;
+	height: 3px;
+	border: none;
+	margin-right: auto;
+}

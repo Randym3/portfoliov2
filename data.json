@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Flixify",
+		"demoURL": "http://flixify.netlify.com/",
+		"gitHubURL": "https://github.com/Randym3/flixify",
+		"personalProject": true,
+		"imgSrc": "../assets/flixify.png",
+		"details": "Simple and responsive web application that allows users to browse for movies and TV shows.",
+		"toolsUsed": ["html", "javascript", "css", "react", "redux", "bootstrap"]
+	},
+	{
+		"title": "MyLingo",
+		"demoURL": "https://randym3.github.io/mylingo/",
+		"gitHubURL": "https://github.com/Randym3/mylingo",
+		"personalProject": true,
+		"imgSrc": "../assets/mylingo.png",
+		"details": "Semantic HTML and CSS3 front-end design of an future online-language learning web application. No BootStrap.",
+		"toolsUsed": ["html", "css"]
+	},
+	{
+		"title": "Watchful",
+		"demoURL": "https://watchful-rm.herokuapp.com/",
+		"gitHubURL": "https://github.com/Randym3/watchful",
+		"personalProject": true,
+		"imgSrc": "../assets/watchful.png",
+		"details": "Full-stack JavaScript e-commerce project. I used React and Redux to manage state, users, and authentication; Node, Express, PostgreSQL and JSONWebToken on the backendUse demo@watchful.com and password 12345",
+		"toolsUsed": [
+			"html",
+			"javascript",
+			"css",
+			"react",
+			"redux",
+			"node",
+			"express",
+			"postgresql"
+		]
+	}
+]

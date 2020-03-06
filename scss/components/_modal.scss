@@ -1,0 +1,73 @@
+section.modal-bg {
+	display: none;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.44);
+	overflow-y: auto;
+	div.modal-container {
+		button.close-button {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			font-size: 50px;
+			color: $primary-bg-color;
+		}
+		img.modal-main-img {
+			width: 80%;
+			max-width: 600px;
+		}
+		p.modal-details {
+			max-width: 500px;
+			margin: 20px auto;
+		}
+		ul#modalToolsUsed {
+			font-size: 40px;
+			.noicon {
+				font-size: 16px;
+				letter-spacing: -1px;
+				display: inline-block;
+			}
+		}
+		a.cta-button {
+			margin: 10px;
+			color: $primary-bg-color;
+			border-color: $primary-bg-color;
+			&:hover {
+				background-color: transparent;
+				color: $nav-dark-bg;
+				border-color: $nav-dark-bg;
+			}
+		}
+	}
+}
+section.modal-bg.show {
+	display: block;
+	position: fixed;
+	animation-name: modalFadeIn;
+	animation-duration: 200ms;
+}
+section.modal-bg.closing {
+	animation-name: modalFadeOut;
+	animation-duration: 200ms;
+}
+
+@keyframes modalFadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes modalFadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+// Start Modal Content

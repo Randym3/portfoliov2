@@ -1,0 +1,20 @@
+$primary-bg-color: #43a5e8;
+$nav-dark-bg: #2c3e50;
+$light-gray-bg: #f3f3f3;
+
+$font-dark-color: #333;
+$font-light-color: #eeeeee;
+
+@mixin secondary-header-font-family {
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+@mixin header-font-family {
+	font-family: Righteous, Helvetica, Arial, sans-serif;
+}
+
+$default-font-family: Poppins, sans-serif;
+
+$s: 576px;
+$m: 768px;
+$l: 992px;
+$xl: 1200px;

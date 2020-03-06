@@ -1,0 +1,37 @@
+.hamburger {
+	z-index: 10000;
+	display: none;
+	@media (max-width: $s) {
+		position: absolute;
+		top: 15px;
+		right: 5%;
+		display: block;
+		cursor: pointer;
+
+		.bar1,
+		.bar2,
+		.bar3 {
+			pointer-events: none;
+			width: 35px;
+			height: 5px;
+			background-color: $font-light-color;
+			margin: 6px 0;
+			transition: 0.4s;
+		}
+	}
+}
+.change.hamburger {
+	.bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.bar2 {
+		opacity: 0;
+	}
+
+	.bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+}
