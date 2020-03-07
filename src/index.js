@@ -1,7 +1,11 @@
-import Modal from "./modal.js";
-import Project from "./projects.js";
-import { elements } from "./base.js";
-import "./responsivemenu.js";
+import Modal from "./js/modal.js";
+import Project from "./js/projects.js";
+import { elements } from "./js/base.js";
+import "./js/responsivemenu.js";
+import "./css/style.css";
+import { polyfill } from "es6-promise";
+polyfill();
+import "isomorphic-fetch";
 
 class App {
 	constructor() {
@@ -32,12 +36,15 @@ class App {
 				cur.toolsUsed
 			)
 		);
-		html.forEach(cur => {
-			projectContainer.innerHTML += cur;
-		});
-		document
-			.querySelectorAll("div.project-card")
-			.forEach(cur => cur.addEventListener("click", this.modal.openModal));
+
+		for (let i = 0; i < html.length; i++) {
+			projectContainer.innerHTML += html[i];
+		}
+
+		let cards = document.querySelectorAll("div.project-card");
+		for (let i = 0; i < cards.length; i++) {
+			cards[i].addEventListener("click", this.modal.openModal);
+		}
 
 		function projectMarkUp(
 			imgSrc,
@@ -74,8 +81,7 @@ class App {
 
 	init() {
 		this.registerCloseModalEvents();
-		console.log(this);
-		// setTimeout(() => this.loadUI(), 1000);
+		console.log("Working");
 	}
 }
 

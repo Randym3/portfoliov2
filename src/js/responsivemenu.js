@@ -10,6 +10,8 @@
 
 	hamburgerMenu.addEventListener("click", () => {
 		toggleMenu(hamburgerMenu);
-		respMenuElements.forEach(cur => cur.classList.toggle("change"));
+		for (var i = 0; i < respMenuElements.length; i++) {
+			respMenuElements[i].classList.toggle("change");
+		}
 	});
 })();

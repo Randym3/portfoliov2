@@ -45,6 +45,7 @@ section.modal-bg {
 section.modal-bg.show {
 	display: block;
 	position: fixed;
+	z-index: 10000;
 	animation-name: modalFadeIn;
 	animation-duration: 200ms;
 }
@@ -69,5 +70,3 @@ section.modal-bg.closing {
 		opacity: 0;
 	}
 }
-
-// Start Modal Content

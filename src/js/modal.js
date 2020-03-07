@@ -5,7 +5,6 @@ export default class Modal {
 	constructor() {}
 
 	openModal() {
-		console.log(this);
 		const {
 			header,
 			img,
@@ -16,7 +15,7 @@ export default class Modal {
 		} = modalElements;
 
 		const toolsUsed = this.getAttribute("data-project-toolsused").split(",");
-		console.log(toolsUsed);
+
 		header.innerHTML = this.getAttribute("data-project-title");
 		img.src = this.getAttribute("data-project-img-src");
 		details.innerHTML = this.getAttribute("data-project-details");
@@ -45,9 +44,3 @@ export default class Modal {
 		}
 	}
 }
-
-// window.addEventListener("keydown", function(e) {
-// 	if (e.keyCode == "Escape") {
-// 		// close modal logic
-// 	}
-// });
