@@ -1,53 +1,53 @@
 section.primary-content {
-	background-color: $primary-bg-color;
-	div.container {
-		padding-top: 120px;
-		padding-bottom: 70px;
-		@media (max-width: $m) {
-			padding-top: 100px;
-			padding-bottom: 20px;
-		}
+  background-color: $primary-bg-color;
+  div.container {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    @media (max-width: $m) {
+      padding-top: 100px;
+      padding-bottom: 20px;
+    }
 
-		div.introduction {
-			color: $font-dark-color;
-			p {
-				font-weight: bold;
-				font-size: 17px;
-				@media (max-width: $s) {
-					font-weight: normal;
-					font-size: 16px;
-				}
-			}
-			p.summary {
-				font-size: 16px;
-				margin-top: 25px;
-				max-width: 500px;
-			}
-			h2 {
-				color: $font-light-color;
-				span {
-					color: $font-dark-color;
-				}
-			}
-			ul.nav-socials {
-				justify-content: left;
-				margin-top: 10px;
-				li {
-					list-style: none;
-					a {
-						color: $font-light-color;
-						font-size: 30px;
-						margin-right: 20px;
-						transition: all ease-in-out 200ms;
-						&:hover {
-							color: $font-dark-color;
-						}
-					}
-				}
-			}
-			a.cta-button {
-				margin-top: 30px;
-			}
-		}
-	}
+    div.introduction {
+      color: $font-dark-color;
+      p {
+        font-weight: bold;
+        font-size: 17px;
+        @media (max-width: $s) {
+          font-weight: normal;
+          font-size: 16px;
+        }
+      }
+      p.summary {
+        font-size: 16px;
+        margin-top: 25px;
+        max-width: 500px;
+      }
+      h2 {
+        color: $font-light-color;
+        span {
+          color: $font-dark-color;
+        }
+      }
+      ul.nav-socials {
+        justify-content: left;
+        margin-top: 10px;
+        li {
+          list-style: none;
+          a {
+            color: $font-light-color;
+            font-size: 30px;
+            margin-right: 20px;
+            transition: all ease-in-out 200ms;
+            &:hover {
+              color: $font-dark-color;
+            }
+          }
+        }
+      }
+      a.cta-button {
+        margin-top: 30px;
+      }
+    }
+  }
 }

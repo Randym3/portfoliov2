@@ -346,7 +346,7 @@ section.primary-content {
 
 section.primary-content div.container {
   padding-top: 120px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 768px) {
