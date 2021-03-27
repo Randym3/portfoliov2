@@ -278,6 +278,10 @@ hr.custom-divider-2 {
   margin-right: auto;
 }
 
+a {
+  color: #56a0ec;
+}
+
 header {
   z-index: 1001;
   background-color: #333;
@@ -341,7 +345,7 @@ header nav.header-nav ul.nav-primary li a {
 }
 
 section.primary-content {
-  background-color: #e88043;
+  background-color: #56a0ec;
 }
 
 section.primary-content div.container {
@@ -428,7 +432,7 @@ section.modal-bg div.modal-container button.close-button {
   top: 10px;
   right: 20px;
   font-size: 50px;
-  color: #e88043;
+  color: #56a0ec;
 }
 
 section.modal-bg div.modal-container img.modal-main-img {
@@ -453,8 +457,8 @@ section.modal-bg div.modal-container ul#modalToolsUsed .noicon {
 
 section.modal-bg div.modal-container a.cta-button {
   margin: 10px;
-  color: #e88043;
-  border-color: #e88043;
+  color: #56a0ec;
+  border-color: #56a0ec;
 }
 
 section.modal-bg div.modal-container a.cta-button:hover {
@@ -661,9 +665,6 @@ section.about-me div.about-text div.skills-icons i:hover p {
 
 section.about-me div.about-text div.skills-icons i p {
   z-index: 1;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   pointer-events: auto;
   display: none;
   position: absolute;
@@ -722,7 +723,7 @@ section.about-me div.profile-pic-container img {
 }
 
 section.contact-me {
-  background-color: #e88043;
+  background-color: #56a0ec;
 }
 
 section.contact-me ul.nav-socials {
