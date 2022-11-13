@@ -15,7 +15,7 @@
 		"es6-promise-promise": "^1.0.0",
 		"isomorphic-fetch": "^2.2.1",
 		"polyfill-io-feature-detection": "^1.1.15",
-		"webpack-cli": "^3.3.11"
+		"webpack-cli": "^3.3.12"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.7",
